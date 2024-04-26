@@ -121,7 +121,7 @@ export default function NewGraph() {
     <Bar style={{ backgroundColor: '#FFFF'}} options={options} data={data} />
     
     </div>
-    <Select
+    {/* <Select
         value={interval}
         onChange={(e) => handleIntervalChange(e.target.value)}
         variant="outlined"
@@ -130,7 +130,7 @@ export default function NewGraph() {
         <MenuItem value="weekly">Weekly</MenuItem>
         <MenuItem value="monthly">Monthly</MenuItem>
         <MenuItem value="yearly">Yearly</MenuItem>
-      </Select>
+      </Select> */}
     
     </div>
   );

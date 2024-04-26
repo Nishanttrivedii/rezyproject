@@ -1,6 +1,7 @@
 import React from 'react'
 import webcam from '../assets/webcam.png'
-import footage from '../assets/footage.png'
+import footage from '../assets/footagecroped.png'
+import './Footage.css'
 const FootageContainer = () => {
   return (
    <>
@@ -39,9 +40,14 @@ const FootageContainer = () => {
                 </svg>
               </div>
 
-              <div className=" mt-[4px]" id="footage">
+              <div className=" mt-[4px] flex flex-col gap-2 " id="footage">
+              <div id="boxes" className='flex lg:flex-row gap-2 sm:flex-col xs:flex-col '><img style={{ width: "100%" }} src={footage} alt="" />
                 <img style={{ width: "100%" }} src={footage} alt="" />
               </div>
+                <div id="boxes" className='flex lg:flex-row gap-2 sm:flex-col xs:flex-col'><img style={{ width: "100%" }} src={footage} alt="" />
+                <img style={{ width: "100%" }} src={footage} alt="" />
+              </div>
+            </div>
             </div>
    </>
   )
